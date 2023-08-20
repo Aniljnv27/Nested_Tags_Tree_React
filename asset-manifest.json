@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Nested_Tags_Tree_React/static/css/main.99e5d788.css",
+    "main.js": "/Nested_Tags_Tree_React/static/js/main.72ed3493.js",
+    "index.html": "/Nested_Tags_Tree_React/index.html",
+    "main.99e5d788.css.map": "/Nested_Tags_Tree_React/static/css/main.99e5d788.css.map",
+    "main.72ed3493.js.map": "/Nested_Tags_Tree_React/static/js/main.72ed3493.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99e5d788.css",
+    "static/js/main.72ed3493.js"
+  ]
+}
