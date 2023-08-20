@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eea4a4;
+    margin: 0;
+    padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  .App {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eea4a4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* TreeView styles */
+  .TreeView {
+    background-color: #8aa8ed;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* TagView styles */
+  .TagView {
+   
+    border: 1px solid #194bc9;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f32fb1;
+  }
+  
+  .TagHeader {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between; /* Add this property to align "Add Child" to the right */
+  margin-bottom: 5px;
+  
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .TagHeader button {
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 3px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .TagName {
+    cursor: pointer;
+    font-weight: bold;
   }
-}
+  
+  .TagName:hover {
+    text-decoration: underline;
+  }
+  
+  .TagContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TagContent input[type="text"] {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .TagChildren {
+    margin-left: 20px;
+  }
+  
+  /* ExportButton styles */
+  .ExportButton {
+    text-align: center;
+  }
+  
+  .ExportButton button {
+    background-color: #007bff;
+    color: #fff;
+    height: 40px;
+    width: auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .ExportButton button:hover {
+    background-color: #b3005f;
+  }
+
+  

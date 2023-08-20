@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import TreeView from './TreeView';
+import ExportButton from './ExportButton';
 
 function App() {
+  const [tree, setTree] = useState({
+    name: 'root',
+    children: [
+      
+      
+    ],
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Nested Tags Tree</h1>
+      <TreeView tree={tree} setTree={setTree} />
+      <ExportButton tree={tree} />
     </div>
   );
 }
